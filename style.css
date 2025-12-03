@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+--caramelo: #bf8c36;
+--preto:#000000;
+--cinza: #b4b4b4;
+--marrom: #8e4f26;
+--fundo-site: #bf8c36;
+
+}
+
+body{
+    background-color: var(--fundo-site);
+}
+
+/* HEADER */
+ header{
+    width:100%;
+      background-color: #8e4f26;
+ }
+
+header>.div.container-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    height: 351px;
+}
+
+.container-flex{
+    width: 85%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
