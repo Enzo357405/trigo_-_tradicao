@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Inter",;
 }
 
 :root {
@@ -13,6 +14,10 @@
     --branco: #fff;
 
 
+}
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
 }
 
 body {
@@ -30,7 +35,7 @@ header>div.container-flex {
     align-items: center;
     justify-content: space-between;
 
-    height: 165px;
+    height: 265px;
     background-color: #8e4f26;
 }
 
@@ -65,4 +70,39 @@ header>div.container-flex {
 #icone-x,
 #menu_botao{
     display: none;
+}
+
+.titulo-sobre{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+   margin: 250px;
+   font-size: 40px;
+   
+   
+}
+
+.texto-container{
+    color: #fff;
+    display: flex;
+    justify-content:flex-start;
+    margin: 200px;
+    text-align: left;
+    font-size: 41px;
+    
+}
+
+.imagem-container{
+ margin: 150px;
+ margin-top: 0px;
+ 
+}
+
+.imagem-container >img{
+     height: 500px;
+    }
+
+.imagem-de-paes{
+    height: 500px;
+  
 }
