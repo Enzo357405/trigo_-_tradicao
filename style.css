@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Inter",;
+    font-family: "Inter", ;
 }
 
 :root {
@@ -15,6 +15,7 @@
 
 
 }
+
 @font-face {
     font-family: Inter;
     src: url(./fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
@@ -45,64 +46,282 @@ header>div.container-flex {
     margin: 0 auto;
 }
 
-#logo{
+#logo {
     width: 220px;
 }
-.links{
-    
+
+.links {
+
     display: flex;
     align-items: center;
     gap: 55px;
 }
 
-.links a{
+.links a {
     font-size: 23px;
     color: #fff;
     text-decoration: none;
 }
 
-.links a:hover{
+.links a:hover {
     color: var(--branco);
     border-bottom: 2px solid var(--branco);
 }
 
 #icone-barras,
 #icone-x,
-#menu_botao{
+#menu_botao {
     display: none;
 }
 
-.titulo-sobre{
+.titulo-sobre {
     color: #fff;
     text-align: center;
     padding-bottom: 25px;
-   margin: 250px;
-   font-size: 40px;
-   
-   
+    margin: 250px;
+    font-size: 40px;
+
+
 }
 
-.texto-container{
+.texto-container {
     color: #fff;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     margin: 200px;
     text-align: left;
-    font-size: 41px;
+    font-size: 45px;
+
+}
+
+.imagem-container {
+    margin: 150px;
+    margin-top: 0px;
+
+}
+
+.imagem-container>img {
+    height: 500px;
+}
+
+.imagem-de-paes>img {
+    width: 2500px;
     
 }
 
-.imagem-container{
- margin: 150px;
- margin-top: 0px;
- 
+
+.titulo-cardapio{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    margin: 160px;
+    font-size: 40px;
+    
 }
 
-.imagem-container >img{
-     height: 500px;
+
+.titulo-paodequeijo{
+    color: #fff;
+    margin: 20px auto;
+    font-size: 25px;
+    margin: 15px;
+    
+}
+ 
+.titulo-bolo{
+    color: #fff;
+     margin: 20px auto;
+    font-size: 25px;
+    margin: 15px;
+    
+}
+
+.titulo-cafecomleite{
+    color: #fff;
+     margin: 20px auto;
+    font-size: 25px;
+    margin: 15px;
+    
+}
+
+
+
+.titulo-baguete{
+    color: #fff;
+     margin: 20px auto;
+    font-size: 25px;
+   margin-top: 21px;
+   margin: 15px;
+   display: grid;
+}
+
+.cardapio-grid{
+margin:  30px auto;
+max-width: 800px;
+padding: 20px;
+gap: 45px;
+grid-template-columns: 1fr 1fr;
+display: grid;
+}
+
+.card-image{
+   width: 100%;
+   max-height: 350px;
+   margin: 0px;
+   
+ 
+  
+   
+}
+
+.titulo-contate-nos{
+    color: #fff;
+    font-size: 40px;
+    margin: 80px 0;
+   margin-bottom: 50px;
+   text-align: justify;
+}
+
+.titulo-endereco{
+color: #000000;
+width: 2;
+}
+
+.contato-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.social-links{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin-left: 10%;
+}
+
+.titulo-endereco{
+    color: #000000;
+    font-size: 30px;
+}
+
+.titulo-gmail{
+    color: #fff;
+    font-size: 30px;
+      display: flex;
+      
+}
+
+.titulo-insta{
+  color: #fff;
+    font-size: 30px; 
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- Responsividade --------------- */
+
+@media screen and (max-width: 768px) {
+#sombra {
+        background-color: #9D562390;
+        backdrop-filter: blur(10px);
+        z-index: 1;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        right: -101vw;
+        transition: .5s;
     }
 
-.imagem-de-paes{
-    height: 500px;
-  
+    #menu_botao {
+        display: block;
+        z-index: 1;
+    }
+
+nav.menu {
+        /* height: 100vh; */
+        width: 200px;
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+
+        position: fixed;
+        top: 165px;
+        right: -210px;
+        z-index: 1;
+        transition: .5s;
+    }
 }
